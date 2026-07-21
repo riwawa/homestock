@@ -2,7 +2,7 @@
 
 A residential management system for tracking inventory, shopping lists, and purchase history — with support for multiple houses and multiple users per house.
 
-## ✨ Features
+## Features
 
 - **Houses** — manage residences and residents
 - **Products** — shared catalog with category, unit of measure, and minimum quantity
@@ -25,7 +25,7 @@ A residential management system for tracking inventory, shopping lists, and purc
 - React Router · Axios
 - Vitest · Testing Library
 
-## 📁 Structure
+## Structure
 
 ```
 homestock/
@@ -85,7 +85,7 @@ cd frontend
 npx vitest run
 ```
 
-## 🏗️ Architecture
+## Architecture
 
 - **Backend**: DTOs kept separate from entities, dedicated mappers, business exceptions handled globally (`GlobalExceptionHandler`), house-scoped nested routes (`/api/houses/{houseId}/...`) with access verification via interceptor.
 - **Frontend**: `Component → Hook (TanStack Query) → Service (Axios) → API`, Zod schemas as the single source of truth for forms, Context for session state (logged-in user, current house).
