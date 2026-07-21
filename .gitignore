@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# Backend (Java/Maven)
+backend/target/
+
+# Frontend (Node/Vite)
+frontend/node_modules/
+frontend/dist/
+
+# Editores
+.vscode/
+.idea/
+*.iml
