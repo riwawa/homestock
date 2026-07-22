@@ -1,0 +1,101 @@
+/* frontend/src/styles/components.css */
+
+/* Botões */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: none;
+  border-radius: var(--radius-pill);
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: transform 0.1s ease, opacity 0.15s ease;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+.btn-primary {
+  background: var(--paprika);
+  color: var(--paper);
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--paprika) 88%, black);
+}
+
+.btn-secondary {
+  background: var(--line);
+  color: var(--ink);
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--line) 80%, var(--ink));
+}
+
+.btn-danger {
+  background: transparent;
+  color: var(--paprika);
+  border: 1.5px solid var(--paprika);
+}
+/* components.css — substitui o .field antigo */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.field label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.field input,
+.field select,
+.field textarea {
+  border: 1.5px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  background: white;
+  color: var(--ink);
+  font-family: var(--font-body);
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--paprika);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--paprika) 15%, transparent);
+}
+
+.field-error {
+  color: var(--paprika);
+  font-size: 0.8rem;
+  margin: 2px 0 0;
+}
+
+.field-section-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: color-mix(in srgb, var(--ink) 55%, white);
+  margin: 0 0 12px;
+}
