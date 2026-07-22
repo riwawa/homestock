@@ -1,5 +1,7 @@
+
+
 # Homestock
-https://github.com/user-attachments/assets/efcf8ade-3e25-41a4-8146-cd0f1f8777eb
+https://github.com/user-attachments/assets/849da76a-e230-45f7-a490-0867d3ae6904
 
 A residential management system for tracking inventory, shopping lists, and purchase history — with support for multiple houses and multiple users per house.
 
