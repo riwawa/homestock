@@ -52,7 +52,8 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                     SecurityContextHolder.getContext().setAuthentication(authentication);
                 }
             } catch (Exception e) {
-                // token inválido/expirado — segue sem autenticar, a rota vai barrar depois
+                System.out.println("Falha ao validar token: " + e.getMessage());
+
             }
         }
 
