@@ -14,6 +14,7 @@ import { InventoryPage } from "../modules/inventory/pages/InventoryPage";
 import { ShoppingListPage } from "../modules/shoppinglist/pages/ShoppingListPage";
 import { PurchasePage } from "../modules/purchase/pages/PurchasePage";
 import { SettingsPage } from "../pages/SettingsPage";
+import { TrendsPage } from "../modules/purchase/pages/TrendsPage";
 
 export function AppRoutes() {
   return (
@@ -38,6 +39,7 @@ export function AppRoutes() {
           <Route path="/shopping-list" element={<ShoppingListPage />} />
           <Route path="/purchase" element={<PurchasePage />} />
           <Route path="/settings" element={<SettingsPage />} />
+          <Route path="/trends" element={<TrendsPage />} />
         </Route>
       </Route>
     </Routes>
